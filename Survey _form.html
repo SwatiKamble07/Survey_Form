@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC:Survey form</title>
+
+    <style>
+        body{
+            background-image: url(/campaign-creators-gMsnXqILjp4-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* color: white; */
+            position: sticky;
+            /* top: 10px; */
+            
+            
+        }
+
+        .navbar{
+            border: 1px solid black; 
+         display: flex;
+            height: 50px;
+            align-items: center;
+            margin-top: 9.5px;
+            justify-content: flex-end;
+           
+           
+
+           
+
+            
+        }
+        .nav_menu{
+            /* border: 1px solid black; */
+           
+            display: flex;
+            align-items: center;
+           
+            justify-content: space-around;
+            width: 200px;
+           
+
+            
+        }
+        .heading{
+            text-align: center;
+        }
+
+     .form-div{
+        margin-top: 50px;
+            margin-left: 500px;
+            padding: 10px;
+            background-color: rgba(27, 27,50,0.8);
+            width:500px ;
+            position: sticky;
+            color: white;
+            font-size: larger;
+            
+
+     }
+     .form1{
+        position: sticky;
+            
+
+     }
+     .sub{
+        background-color: #37af65;
+        width: 100%;
+        height: 30px;
+        border-radius: 4px;
+     }
+
+     input{
+        /* width: 100%; */
+     }
+     .top_secion input{
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    .role{
+        border-radius: 5px;
+        width: 100%;
+    }
+        
+
+
+ 
+   
+ 
+
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav_menu">
+
+       
+
+
+        <div class="nav_sign">  <a href="#"> Sign Up</a>
+        </div>
+        <div class="nav_log">  <a href="#"> Log In</a>
+        </div>
+    </div>
+       
+        
+        
+        
+
+        
+    </div> 
+
+
+    <div class="heading">
+        <h1>FreeCodeCamp Survey Form</h1>
+        <p>Thank you for taking the time to help us improve the platform</p> 
+    </div>
+
+
+
+    <div class="form-div">
+        <form class="form1" action="#">
+            
+           
+           
+            <div class="top_secion">
+            <label for="Name"> Name</label>
+            <div >
+                <input type="Name" placeholder="Enter your name">
+            
+            <br>
+            <label for="Email"> Email</label>
+        
+                <input type="Email" placeholder="Enter your Email">
+            
+            <br>
+            <label for="Age"> Age</label>
+        
+                <input type="Age" placeholder="Age">
+            </div>
+        </div>
+
+
+            <br>
+
+            <label for="Which option best describes your current role?">Which option best describes your current
+                role?</label>
+            <div class="role">
+                <select name="profession" id="compition">
+                    <option value="role">Select current role</option>
+                    <option value="Chall">Student</option>
+                    <option value="pro">Full Time Job</option>
+                    <option value="Com">Full Time Learner</option>
+                    <option value="Open">Prefer not to say</option>
+                    <option value="Open">Other</option>
+
+                </select>
+            </div>
+            <br>
+            <label for="Would you recommend freeCodeCamp to a friend?">Would you recommend freeCodeCamp to a
+                friend?</label>
+            <div>
+                <input type="radio" name="profession" id="Definitely">
+                <label for="Definitely">Definitely</label>
+                <br>
+                <input type="radio" name="profession" id="Maybe">
+                <label for="Maybe"> Maybe</label>
+                <br>
+                <input type="radio" name="profession" id="Not sure">
+                <label for="Not sure">Not sure</label>
+            </div>
+
+
+            <br>
+            <label for="What is your favorite feature of freeCodeCamp?">What is your favorite feature of
+                freeCodeCamp?</label>
+            <div>
+                <select name="profession" id="feature">
+                    <option value="role">Select an option </option>
+                    <option value="Chall">Challeges</option>
+                    <option value="pro">Project</option>
+                    <option value="Com">Community</option>
+                    <option value="Open">Open Source</option>
+                </select>
+            </div>
+            <br>
+
+            <label for="What would you like to see improved? (Check all that apply)">What would you like to see
+                improved? (Check all that apply)</label>
+            <div>
+                <input type="checkbox" name="apply" id="Front-end Projects">
+                <label for="Front-end Projects">Front-end Projects</label>
+                <br>
+                <input type="checkbox" name="apply" id="Back-end Projects">
+                <label for="Back-end Projects">Back-end Projects</label>
+                <br>
+                <input type="checkbox" name="apply" id="Data Visualization">
+                <label for="Data Visualization">Data Visualization</label>
+                <br>
+                <input type="checkbox" name="apply" id="Challeges">
+                <label for="Challeges">Challeges</label>
+                <br>
+                <input type="checkbox" name="apply" id="Open Source Community">
+                <label for="Open Source Community">Open Source Community</label>
+                <br>
+                <input type="checkbox" name="apply" id="Gitter help rooms">
+                <label for="Gitter help rooms">Gitter help rooms</label>
+                <br>
+                <input type="checkbox" name="apply" id="Videos">
+                <label for="Videos">Videos</label>
+                <br>
+                <input type="checkbox" name="apply" id="City Meetups">
+                <label for="City Meetups">City Meetups</label>
+                <br>
+                <input type="checkbox" name="apply" id="Wiki">
+                <label for="Wiki">Wiki</label>
+                <br>
+                <input type="checkbox" name="apply" id="Forum">
+                <label for="Forum">Forum</label>
+                <br>
+                <input type="checkbox" name="apply" id="Additional Courses">
+                <label for="Additional Courses">Additional Course</label>
+            </div>
+            <br>
+            <label for="Any comments or suggestions">Any comments or suggestions</label>
+            <div>
+                <textarea name="myText" cols="50" rows="10" placeholder="Enter your comment here...">
+                </textarea>
+            </div>
+            <br>
+            <div  id="s1">
+                <input class="sub" type="submit" value="Submit" id="submit">
+            </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    </form>
+
+
+</body>
+
+</html>
